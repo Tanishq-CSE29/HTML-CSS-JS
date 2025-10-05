@@ -119,3 +119,80 @@ a:hover {
   color: orange;
 }
 This pseudo-class is very useful for creating visual effects based on user interaction.
+
+<!-- TEXT -->
+With CSS there are many ways to change how text is displayed.
+In this section, you'll learn the most common text manipulation CSS properties.
+
+
+<!-- Text Color -->
+The color property sets the color of text. 
+The following CSS sets the text color for all paragraph elements to red.
+
+p{ 
+  color: red;
+}
+
+
+<!-- Text Font and Size -->
+There are many different fonts to display text on your computer.
+In simple terms, font is a collection of text characters written in a specific style and size.
+If you've used a word processor before, you're probably familiar with the fonts 'Times New Roman' and 'Calibri'.
+To set the font used by text in CSS you use the font-family property.
+
+
+p{ 
+  font-family: "Courier New", monospace;
+}
+Since computers vary in what fonts they have installed, it is recommended to include several fonts when using the font-family property. 
+These are specified in a fallback order, meaning that if the first font is not available, it will check for the second font.
+If the second font is not available, then it will check for the third font and so on. 
+If none of the fonts are available, it will use the browser's default font.
+
+To set the size of the font, the font-size property is used.
+
+p { 
+  font-family: "Courier New", monospace;
+  font-size: 12px;
+}
+
+
+<!-- Text Transformation -->
+Text transformation is useful if you want to ensure the correct capitalization of the text content. In the example below, the CSS rule will change all text in paragraph elements to uppercase using the text-transform property:
+
+p { 
+  text-transform: uppercase;
+}
+
+The most commonly used values for the text-transform property are:  uppercase,  lowercase,  capitalize  and none.
+The default value used is none, which means the text displays as it was written in the HTML document.
+
+
+<!-- Text Decoration -->
+The text-decoration property is useful to apply additional decoration to text such as underlining and line-through (strikethrough).
+
+p { 
+  text-decoration: underline;
+}
+
+It is possible to set the color, thickness and styling of the decoration too. 
+In the example below, the underline will be a solid red line that is 5 pixels thick.
+
+p { 
+  text-decoration: underline red solid 5px;
+}
+
+If this is confusing, don't worry. 
+These properties can be individually set using the text-decoration-line, text-decoration-color, text-decoration-style and text-decoration-thickness properties. 
+Let's use the same example again and define it using the individual properties:
+
+p { 
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: solid;
+  text-decoration-thickness: 5px;
+}
+The most common text-decoration-line values used are: underline, overline, line-through and none. 
+None is the default value to use no text decoration.
+There are many styles available for the text-decoration-style  property;  solid,  double,  dotted,  dashed  and  wavy.
+The text-decoration-style property requires the decoration line to be defined. If the decoration style is not specified, solid will be used.
