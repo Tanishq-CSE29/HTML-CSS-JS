@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms in HTML:</h1>
+    <form action="">
+        <label for="name">Enter your name here:</label>
+        <input type="text" minlength="2" maxlength="20" required id="name">
+        <!--required shows that this field has to be filled.-->
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age">
+        <br><br>
+        <label for="mail">Email:</label>
+        <input type="email" id="mail">
+        <br><br>
+        <label for="doj">Date of joining:</label>
+        <input type="date" id="doj">
+        <br><br>
+        <label for="pswd">Password:</label>
+        <input type="password" id="pswd">
+        <br><br>
+        <p>Shirt Size for Event:</p>
+        <input type="radio" name = "Shirtsize" id="Small"><label for="Small">Small Size</label><br><br>
+        <input type="radio" name = "Shirtsize" id="Medium"><label for="Medium">Medium Size</label><br><br>
+        <input type="radio" name = "Shirtsize" id="Large"><label for="Large">Large Size</label><br><br>
+        <!--for and id helps to bind a label together. Here what happens is when client
+        clicks on Small size (or the written part beside the radio button), the button
+        is checked/selected.-->
+    </form>
+</body>
+
+</html>
