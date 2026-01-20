@@ -11,7 +11,10 @@
     <h1>Forms in HTML:</h1>
     <form action="">
         <label for="name">Enter your name here:</label>
-        <input type="text" minlength="2" maxlength="20" required id="name">
+        <input type="text" minlength="2" maxlength="20" required id="name" 
+        placeholder="Enter your full name here."
+        value=""
+        name="fullName">
         <!--required shows that this field has to be filled.-->
         <br><br>
         <label for="age">Age:</label>
@@ -27,12 +30,35 @@
         <input type="password" id="pswd">
         <br><br>
         <p>Shirt Size for Event:</p>
-        <input type="radio" name = "Shirtsize" id="Small"><label for="Small">Small Size</label><br><br>
-        <input type="radio" name = "Shirtsize" id="Medium"><label for="Medium">Medium Size</label><br><br>
-        <input type="radio" name = "Shirtsize" id="Large"><label for="Large">Large Size</label><br><br>
+        <input type="radio" name = "Shirtsize" value="Small" id="Small"><label for="Small">Small Size</label><br>
+        <input type="radio" name = "Shirtsize" value="Medium" id="Medium"><label for="Medium">Medium Size</label><br>
+        <input type="radio" name = "Shirtsize" value="Large" id="Large"><label for="Large">Large Size</label><br>
         <!--for and id helps to bind a label together. Here what happens is when client
         clicks on Small size (or the written part beside the radio button), the button
         is checked/selected.-->
+
+        <p>Languages you know:</p>
+        <input type="checkbox" name = "Language" value="Hindi" id="Hindi"><label for="Hindi">Hindi</label><br>
+        <input type="checkbox" name = "Language" value="English" id="English"><label for="English">English</label><br>
+        <input type="checkbox" name = "Language" value="Sanskrit" id="Sanskrit"><label for="Sanskrit">Sanskrit</label><br>
+
+
+        <label for="color">Please select a color for your shirt.</label>
+        <input id="color" type="color"><br><Br>
+        <label for="payOp">Please select a payment option:</label>
+        <select name="payment" id="payOp">
+            <option value=""></option>
+            <option value="gpay">gpay</option>
+            <option value="Phonepe">Phonepe</option>
+            <option value="UPI">UPI</option>
+            <option value="COD">COD</option>
+        </select>
+        <br><br>
+        <label for="cmt">Please provide your feedback:</label>
+        <textarea name="comment" id="cmt" rows="15" cols="100" 
+            placeholder="Please type your comments here."></textarea><br><br>
+        <input type="submit"><br><br>
+        <input type="reset">
     </form>
 </body>
 
