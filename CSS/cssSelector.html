@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="cssSelector.css">
+</head>
+
+<body>
+    <!-- 
+    >>Element Selector
+    >>ID Selector
+    >>Class Selector
+    >>Nested Selector
+    >>Universal Selector
+    >>Descendant Selector
+    >>Direct Child Selector
+    
+    -->
+    <header>
+        <h1>Selectors in CSS</h1>
+    </header>
+    <main>
+        <article id="eleSel">
+            <h2>Element Selector</h2>
+            <p id="pId" class="highlighter">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet exercitationem et nulla aliquid sapiente
+                earum maxime unde nesciunt vero magnam.
+            </p>
+        </article>
+
+        <article id="id">
+            <h2>ID Selector</h2>
+            <p id="p1Id">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet exercitationem et nulla aliquid sapiente
+                earum maxime unde nesciunt vero magnam.
+            </p>
+        </article>
+
+        <article id="highSel">
+            <h2 class="highlighter headingStyles">Class Selector</h2>
+            <!-- Right above, the spacebar in the "value" for class attribute shows that this particular heading can be styled using two different class names as well.
+            -->
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet exercitationem et nulla aliquid sapiente
+                earum maxime unde nesciunt vero magnam.
+            </p>
+        </article>
+        <!-- Important Note:-
+            id="" and class=""  tag differs, in html it will not do any problem and can be used interchangeably but this will break the system when it comes to javascript because they behave differently. In the sense that class is meant to hold/behave for a collection so JS knows that class attribute can be used in multiple areas with same "Value" but id is meant to be unique and this will crash the JS if multiple tags use the same "Value" for id attribute.
+        -->
+        <article id="nestSel">
+            <h2>Nested Selector:</h2>
+            <p id="nestedId" class="nestedClass">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quia
+                eius molestiae deserunt quibusdam ad eligendi non praesentium nam atque!</p>
+        </article>
+
+        <article id="descSel">
+            <h2>Descendant Selector:</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nemo unde numquam nihil! Vero nostrum et quos
+                iusto ratione impedit ex dolor quod veniam reprehenderit.</p>
+            <section>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, perspiciatis!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, perspiciatis!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, perspiciatis!</p>
+            </section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quia eius molestiae deserunt quibusdam
+                ad eligendi non praesentium nam atque!</p>
+        </article>
+
+        <article id="dirSel">
+            <h2>Direct Child Selector:</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nemo unde numquam nihil! Vero nostrum et quos
+                iusto ratione impedit ex dolor quod veniam reprehenderit.</p>
+            <section>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, perspiciatis!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, perspiciatis!</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste, perspiciatis!</p>
+            </section>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quia eius molestiae deserunt quibusdam ad eligendi non praesentium nam atque!</p>
+        </article>
+    </main>
+</body>
+
+</html>

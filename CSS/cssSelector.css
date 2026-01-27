@@ -1,0 +1,75 @@
+/* 
+Selector Syntax:
+SelectorTyoe{
+    propertyKey : propertyValue;
+}
+*/
+/* 1.Element Selector */
+/* p{
+    color:bisque;
+    background-color:cornflowerblue;
+}
+h2{
+    color:dimgrey;
+    background-color: lawngreen;
+} */
+
+
+/* 2.ID Selector */
+/* #pId{
+    color:brown
+}
+#p1Id{
+    font-family: cursive;
+} */
+
+
+/* 3.Class Selector */
+/* .highlighter{
+   background-color:yellow;
+}
+.headingStyles{
+    font-size: xx-large;
+    color:darkcyan;
+} */
+
+
+/* 4. Nested Selector */
+/*#pId, #p1Id, .highlighter, p{     //this enables multiple tags to have same property//
+    color:brown;
+}*/
+
+/* Specificity Order.
+    ID >> Class >> Elemental tag 
+    Above order is in terms of styling preference in css file.
+*/
+/* #nestedId{
+    color:red;
+}
+.nestedClass{
+    color:blue;
+}
+p{
+    color:yellow;
+} */
+
+
+/* 5. Universal Selector 
+This applies its styles to the entire web page
+*/
+/* *{
+    font-family: 'Courier New', Courier, monospace;
+    color:green;
+} */
+
+
+/* 6.Descendant Selector */
+/* #descSel p{
+    color:red;
+} */
+
+
+/* 7. Direct Child Selector */
+/* #dirSel>p{
+    color:blue;
+} */
