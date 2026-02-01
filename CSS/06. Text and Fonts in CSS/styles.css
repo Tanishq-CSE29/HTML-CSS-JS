@@ -1,0 +1,33 @@
+h1 {
+    color: firebrick;
+    background: bisque;
+    text-decoration: underline wavy;
+    text-shadow: 1px 1.1px 5px sandybrown;
+    /* text-shadow: horizontal vertical blurness color */
+}
+
+p {
+    text-align: justify;
+    /* It makes the indentation on the left and right evenly. */
+    word-spacing: 7px;
+    text-align: justify;
+    letter-spacing: 0.1px;
+    line-height: 20px;
+    padding: 7px;
+    text-shadow: 1px 1.1px 5px sandybrown;
+    font-family: "Roboto", sans-serif;
+
+}
+
+/* 
+while making the styling of the text in the anchor tags with a href link, always specify a line first then the value for the attribute. Like the below example:
+*/
+
+a {
+    text-decoration: underline wavy;
+    /* writing just wavy won't work because there is no line to apply this attribute on. */
+}
+
+a:hover {
+    color: chocolate;
+}
