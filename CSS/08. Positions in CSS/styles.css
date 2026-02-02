@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+}.container{
+    background-color: aqua;
+    width: 600px;
+    height:600px;
+    border:1px solid aqua;
+    margin:100px;
+    /* position: relative; */
+}
+.box{
+    color:white;
+    width: 100px;
+    height: 100px;
+}
+.static{
+    position: static;
+    background-color:black;
+    /* 
+    all attributes like top:50px etc. are ignored as static position defines normal behaviour of the position. 
+    */
+}
+.relative{
+    position: relative;
+    /*
+    relative to its parent i.e. .container div
+    */
+    background-color:red;
+    top:100px;
+    left:200px;
+}
+.absolute{
+    position: absolute;
+    /*
+    w.r.t. root tag i.e. html tag 
+    */
+    /* 
+    In case there is a parent/grandparent... to this absolute tag and the position is set to relative for this parent/grandparent... then this tag is w.r.t. the parent/grandparent... tag.
+    */
+    background-color:blue;
+    bottom:0px;
+    right:0px;
+    z-index:2;
+    /* 
+    z-index is a stacking order along an maginary Z-axis (depth). z-index controls which overlapping element appears in front by ordering elements along an imaginary Z-axis perpendicular to the screen.
+    */
+}
+.fixed{
+    position: fixed;
+    /* 
+    fixes the position of anything in the webpage. It remains in the same position even when the page is scrolled up or down. 
+    */
+    bottom:90px;
+    right:90px;
+    background-color:brown;
+    z-index:1;
+}
+.sticky{
+    position: sticky;
+    /* 
+    Acts like relative in normal flow, but becomes fixed when a scroll threshold (top/ left/etc.) is reached. Sticks within its nearest scrollable ancestor, not the viewport(visible area of the webpage inside the browser window), and needs at least one offset (top/bottom/left/right) to work. */
+    top:300px;
+    left:120px;
+    background-color:purple;
+}
+.blankspace{
+    height:400px;
+}
