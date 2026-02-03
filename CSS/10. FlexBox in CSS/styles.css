@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container {
+    height: 400px;
+    border: 2px red solid;
+    display: flex;
+    /* 
+    Flexbox is a CSS layout system for arranging elements in one direction — either a row or a column. Its "direct children" become flex items, not grandchildren unless otherwise specified.
+    */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* wrap(moves extra content at right to the bottom)|  nowrap|  wrap-reverse(moves extra content at right to the top) */
+    /* 
+    It controls whether the flex items are allowed to move onlto multiple lines when they don't fit in the container.
+    */
+
+    gap: 10px;
+    /* 
+    row-gap:10px;
+    column-gap:10px;
+    */
+    /* 
+    We could have used margin or padding as well but gap differentiates in a way that the left-most space is not given, i.e. flex content starts from left most without any margin or padding(unless otherwise given).
+    */
+
+    justify-content: space-around;
+    /* flex-start(default)| flex-end | center | space-around | space-evenly | space-between */
+    /* 
+    It works on main axis---flex-direction: row => main axis=horizontal.
+    */
+
+    align-items: stretch;
+    /* flex-start|flex-end|center|stretch|baseline */
+    /* 
+    Works on items inside rows/columns.
+    */
+
+    align-content: space-evenly;
+    /* stretch | flex-start | center | flex-end | space-between | space-around | space-evenly; */
+    /* 
+    Works on rows/columns as a whole.
+    */
+}
+
+.box {
+    border: 1px green solid;
+    /* margin:10px 0; */
+    width: 80px;
+}
+
+#box-1 {
+    flex-grow: 1;
+    /* 
+    controls how much a flex item is allowed to grow when there is extra space in the flex container. 
+    */
+    flex-basis:25%;
+    /* It's is the initial size of a flex item on the main axis before grow and shrink are applied. After this grow and shrink are applied. If there is shortage wrapping is done if wrapping is not allowed then shrink is performed.*/
+}
+#box-2{
+    flex-shrink: 2;
+    /* does not work when flex-wrap is enabled as browsers prefers wrapping instead of shrinking. */
+}
+#box-4 {
+    flex-grow: 3;
+    /* align-self: center; */
+    /*  auto | stretch | flex-start | center | flex-end | baseline */
+    /* 
+    This lets one individual flex item override the container’s align-items value.
+    */
+}

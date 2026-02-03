@@ -1,0 +1,36 @@
+.container{
+    /* height:400px; */
+    /* width:405px; */
+    /* border: 1px solid red; */
+    /* overflow:visible; */
+    /* overflow:hidden; */
+    /* overflow:scroll; */
+    overflow:auto;
+    text-align:justify;
+}
+/* 
+NOTE: float and clear go together. If float is not used clear does nothing.
+
+Floats were originally made to let text wrap around images (newspaper style). Although, they can be used for any elements, not just text and images.
+Problem:
+Next elements try to sit beside the floated image.Sometimes you want the next element below it. 
+Solution: 
+That’s where clear comes in.
+*/
+.subcontainer{
+    overflow:auto;
+}
+.subcontainer>img{
+    float:right;
+}
+.subcontainer>p{
+    clear:right;
+    /* 
+    Tells that it will not sit beside content which is set to float to the right. */
+}
+img{
+    float:left;
+}
+p{
+    clear:left;
+}
