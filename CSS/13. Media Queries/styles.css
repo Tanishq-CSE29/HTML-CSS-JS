@@ -1,0 +1,31 @@
+body{
+    background-color: aqua;
+}
+
+/* @media(orientation: landscape){
+    body{
+        background-color: red;
+    }
+} */
+
+
+/* @media(width <= 500px){
+    body{
+        background-color: red;
+    }
+}
+
+@media(width <= 300px){
+    body{
+        background-color: aliceblue;
+    } */
+/* } */
+/* aliceblue one if above then does not apply as while it applies for 300 but also for red and hence red one is applied*/
+
+@media(min-width: 500px) and (max-width: 700px){
+    body{
+        background-color: red;
+    }
+}
+
+/* now use this knowledge to make the 12th lesson responsive. */
